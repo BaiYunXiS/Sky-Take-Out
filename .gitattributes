@@ -1,0 +1,9 @@
+* text=auto
+
+*.java text
+*.xml text
+*.yml text
+*.yaml text
+*.properties text
+*.md text
+*.gitignore text

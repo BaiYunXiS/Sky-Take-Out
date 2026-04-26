@@ -1,6 +1,35 @@
+# Maven / Java build output
+target/
 **/target/
-.idea
-*.iml
 *.class
-*Test.java
-**/test/
+
+# IDE / editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Logs and runtime files
+logs/
+*.log
+*.pid
+
+# Environment and local-only config
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-local.properties
+application-*.local.yml
+application-*.local.yaml
+application-*.local.properties
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

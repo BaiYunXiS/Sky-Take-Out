@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 sky:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -5,4 +8,4 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: zhangchen6688

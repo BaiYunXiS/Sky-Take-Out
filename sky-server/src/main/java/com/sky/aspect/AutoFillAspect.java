@@ -72,9 +72,12 @@ public class AutoFillAspect {
             try {
                 Method setUpdateTime = entity.getClass().getDeclaredMethod(AutoFillConstant.SET_UPDATE_TIME, LocalDateTime.class);
                 Method setUpdateUser = entity.getClass().getDeclaredMethod(AutoFillConstant.SET_UPDATE_USER, Long.class);
+                //通过反射为对象赋值
+                setUpdateTime.invoke(entity, now);
+                setUpdateUser.invoke(entity, currentId);
 
-            } catch (NoSuchMethodException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
         }
